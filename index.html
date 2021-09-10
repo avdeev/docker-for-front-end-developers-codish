@@ -132,11 +132,11 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Каждая пятая</h2>
+        <h2 class="shout">Каждая<br>пятая</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Эра Docker</h2>
+        <h2 class="shout">Эра<br>контейнеров</h2>
     </section>
 
     <section class="slide">
@@ -144,7 +144,7 @@
 
         <ol>
             <li>👨 Алексей Авдеев (<a href="https://github.com/avdeev">https://github.com/avdeev</a>)</li>
-            <li class="next">👔 CTO, руковожу разработкой</li>
+            <li class="next">👔 Сеньор фронтенд, технический директор</li>
             <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
             <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
             <li class="next">👴 Программирую с 2002 года</li>
@@ -209,6 +209,14 @@
 
     <section class="slide">
         <h2 class="shout">Автоматизируй</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Разрабатываем<br>в контейнере</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" src="pictures/2-architecture-containers.png" alt="">
     </section>
 
     <!-- 2. оставляем рабочий компьютер чистым -->
@@ -469,7 +477,7 @@
         </pre>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/dockerhub-google-lighthouse.png" alt="">
     </section>
 
@@ -502,7 +510,7 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Решение организационных вопросов</h2>
+        <h2 class="shout">Поиск<br>владельца</h2>
     </section>
 
     <section class="slide">
@@ -577,10 +585,6 @@
         </pre>
     </section>
 
-    <section class="slide">
-        <h2 class="shout">Демо</h2>
-    </section>
-
     <section class="slide clear">
         <img class="cover h" style="height: 90%;" src="pictures/backend-frameworks.png" alt="">
     </section>
@@ -593,7 +597,7 @@
         <h2>Dockerfile для Node.js</h2>
 
         <pre>
-            <code>FROM node:10-alpine</code>
+            <code>FROM node:14-alpine</code>
             <code class="next">WORKDIR /app</code>
             <code class="next">COPY package*.json ./</code>
             <code class="next">RUN npm ci</code>
@@ -622,10 +626,6 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Демо</h2>
-    </section>
-
-    <section class="slide">
         <h2 class="shout">Универсальная абстракция</h2>
     </section>
 
@@ -643,7 +643,7 @@
             <code>  <mark>front</mark>:</code>
             <code>    build: ./front</code>
             <code>  <mark>reverse-proxy</mark>:</code>
-            <code>    image: abiosoft/caddy</code>
+            <code>    image: caddy</code>
             <code>    ports:</code>
             <code>      - 80:80</code>
             <code>    volumes:</code>
@@ -673,10 +673,11 @@
         <ul>
             <li>👨 Алексей Авдеев</li>
             <li>🌐 <a href="https://github.com/avdeev">https://github.com/avdeev</a></li>
+            <li>🌐 <a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a></li>
             <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
         </ul>
 
-        <img src="pictures/iam.jpg" alt="я" style="height: 250px; position: absolute; right: 80px; top: 141px;">
+        <img src="pictures/iam.jpg" alt="я" style="height: 250px; position: absolute; right: 55px; top: 141px;">
     </section>
 
     <footer class="badge">
