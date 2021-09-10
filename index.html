@@ -132,7 +132,7 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">1 из 5<br>вакансий требует Docker</h2>
+        <h2 class="shout">Каждая пятая</h2>
     </section>
 
     <section class="slide">
@@ -159,7 +159,7 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Поднимаем backend</h2>
+        <h2 class="shout">Поднимаем бэкенд</h2>
     </section>
 
     <section class="slide clear" style="background-color: #ea413c">
@@ -252,7 +252,7 @@
 
         <ol>
             <li class="next"><mark>nvm use 14</mark></li>
-            <li class="next"><mark>npm install</mark></li>
+            <li class="next"><mark>npm clean-install</mark></li>
             <li class="next"><mark>npm run build</mark></li>
             <li class="next">Раздаём папку <mark>/dist</mark> веб-сервером</li>
         </ol>
@@ -296,7 +296,7 @@
 
     <section class="slide">
         <h2 class="shout" style="font-size: 3.6em;">
-            Безопасно собирайте, делитесь и&nbsp;запускайте любое приложение где угодно
+            Build safer, share wider, run faster
         </h2>
     </section>
 
@@ -405,7 +405,7 @@
         <h2>Hello World (1)</h2>
 
         <pre>
-            <code>$ docker run ubuntu:14.04 /bin/echo 'Hello world'</code>
+            <code>$ docker run ubuntu:20.04 /bin/echo 'Hello world'</code>
             <code> </code>
             <code>Hello world</code>
         </pre>
@@ -470,7 +470,7 @@
     </section>
 
     <section class="slide">
-        <img class="cover w" src="pictures/dockerhub-google-lighthouse.png" alt="" style="box-shadow: 5px 5px 20px 8px #b9b9b9; width: 90%;">
+        <img class="cover w" src="pictures/dockerhub-google-lighthouse.png" alt="">
     </section>
 
     <section class="slide">
@@ -483,7 +483,7 @@
             <code>  -it \</code>
             <code>  --volume ~:/home/chrome/reports \</code>
             <code>  --cap-add=SYS_ADMIN \</code>
-            <code>  <mark>femtopixel/google-lighthouse https://кодишь.рф/</mark></code>
+            <code>  <mark>femtopixel/google-lighthouse https://vpene.ru/</mark></code>
         </pre>
     </section>
 
@@ -535,15 +535,15 @@
         <img class="cover w" src="pictures/frameworks.png" alt="">
     </section>
 
-    <section class="slide">
-        <img class="cover w" src="pictures/dockerhub-node.png" alt="" style="box-shadow: 5px 5px 20px 8px #b9b9b9; width: 90%;">
+    <section class="slide clear">
+        <img class="cover w" src="pictures/dockerhub-node.png" alt="">
     </section>
 
     <section class="slide">
         <h2>Dockerfile (1)</h2>
 
         <pre>
-            <code>FROM    node:10-alpine as builder</code>
+            <code>FROM    node:14-alpine as builder</code>
             <code class="next">WORKDIR /app</code>
             <code class="next">COPY    package*.json ./</code>
             <code class="next">RUN     npm ci</code>
@@ -553,15 +553,15 @@
         </pre>
     </section>
 
-    <section class="slide">
-        <img class="cover w" src="pictures/dockerhub-nginx.png" alt="" style="box-shadow: 5px 5px 20px 8px #b9b9b9; width: 90%;">
+    <section class="slide clear">
+        <img class="cover w" src="pictures/dockerhub-nginx.png" alt="">
     </section>
 
     <section class="slide">
         <h2>Dockerfile (2)</h2>
 
         <pre>
-            <code>FROM   nginx:1.13-alpine</code>
+            <code>FROM   nginx:1.21-alpine</code>
             <code class="next">COPY   nginx /etc/nginx/conf.d</code>
             <code class="next">COPY   --from=builder /app/dist/ /usr/share/nginx/html/</code>
             <code class="next"><mark>EXPOSE 5000</mark></code>
@@ -585,8 +585,8 @@
         <img class="cover h" style="height: 90%;" src="pictures/backend-frameworks.png" alt="">
     </section>
 
-    <section class="slide">
-        <img class="cover w" src="pictures/dockerhub-node.png" alt="" style="box-shadow: 5px 5px 20px 8px #b9b9b9; width: 90%;">
+    <section class="slide clear">
+        <img class="cover w" src="pictures/dockerhub-node.png" alt="">
     </section>
 
     <section class="slide">
@@ -603,8 +603,8 @@
         </pre>
     </section>
 
-    <section class="slide">
-        <img class="cover w" src="pictures/dockerhub-python.png" alt="" style="box-shadow: 5px 5px 20px 8px #b9b9b9; width: 90%;">
+    <section class="slide clear">
+        <img class="cover w" src="pictures/dockerhub-python.png" alt="">
     </section>
 
     <section class="slide">
