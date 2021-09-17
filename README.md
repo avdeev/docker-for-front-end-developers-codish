@@ -1,6 +1,6 @@
 # Docker для фронтендера
 
-Слайды для доклада на конференцию FrontendConf 2019
+Слайды для доклада на конференцию [кодишь.рф](https://xn--d1aieq6cya.xn--p1ai/)
 
 [Доклад в программе FrontendConf 2019](https://frontendconf.ru/moscow/2019/abstracts/5593)
 
